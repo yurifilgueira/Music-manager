@@ -19,7 +19,7 @@ private:
 public:
     Node()
     {
-        this->data = nullptr;
+        this->data = NULL;
         this->next = nullptr;
     }
     Node(T value)
