@@ -1,5 +1,7 @@
 #include <Artist.h>
 
+using std::endl;
+
 Artist::Artist()
 {
 }
@@ -17,4 +19,10 @@ string Artist::getName()
 void Artist::setName(string name)
 {
     this->name = name;
+}
+ostream &operator<<(ostream &os, Artist *artist)
+{
+    os << artist->getName() << endl;
+
+    return os;
 }

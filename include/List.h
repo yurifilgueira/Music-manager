@@ -27,12 +27,12 @@ public:
     void add(T value)
     {
         Node<T> *temp = new Node<T>(value);
-
         if (head == nullptr)
         {
             head = temp;
             head->setNext(temp);
             tail = temp;
+            tail->setNext(nullptr);
         }
         else
         {
@@ -40,9 +40,9 @@ public:
             tail = tail->getNext();
         }
     }
-    friend ostream &operator<<(ostream &os, List list)
+    friend ostream &operator<<(ostream &os, List *list)
     {
-        os << *list.getHead() << endl;
+        os << list->getHead() << endl;
 
         return os;
     }

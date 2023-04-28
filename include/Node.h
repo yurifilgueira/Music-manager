@@ -39,14 +39,13 @@ public:
     {
         this->next = next;
     }
-    friend ostream &operator<<(ostream &os, Node<T> node)
+    friend ostream &operator<<(ostream &os, Node<T> *node)
     {
+        os << node->getData() << endl;
 
-        os << "Numb: " << node.getData() << endl;
-
-        if (node.getNext() != nullptr)
+        if (node->getNext() != nullptr)
         {
-            os << *node.getNext();
+            os << node->getNext();
         }
 
         return os;
