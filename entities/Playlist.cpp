@@ -39,20 +39,33 @@ Music *Playlist::nextMusic()
     }
 
     static Node<Music *> *next = new Node<Music *>();
+    static bool noNext = false;
+    static bool hasHead = false;
     Node<Music *> *music = new Node<Music *>();
 
-    if (next->getData() == NULL)
+    if (!hasHead)
     {
         music = musics->getHead();
         if (music->getNext() != nullptr)
         {
             next = music->getNext();
         }
+        hasHead = true;
     }
-    else if (next != nullptr)
+    else if (!noNext)
     {
+        cout << "Opa1" << endl;
         music = next;
-        music->getNext();
+        cout << "Opa2" << endl;
+        if (music->getNext() != nullptr)
+        {
+            next = music->getNext();
+        }
+        else
+        {
+            next = music->getNext();
+            noNext = true;
+        }
     }
     else
     {

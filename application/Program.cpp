@@ -42,11 +42,20 @@ int main()
         playlist->addMusic(music);
     }
 
-    // system("clear");
+    system("clear");
     char keep;
     do
     {
-        cout << playlist->nextMusic();
+        Music *music = playlist->nextMusic();
+        if (music != nullptr)
+        {
+            cout << music;
+        }
+        else
+        {
+            cout << "---Playlist songs are over---" << endl;
+            break;
+        }
         cin >> keep;
     } while (keep == 's');
 
