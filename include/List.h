@@ -42,7 +42,7 @@ public:
     }
     friend ostream &operator<<(ostream &os, List *list)
     {
-        os << list->getHead() << endl;
+        os << list->getHead();
 
         return os;
     }

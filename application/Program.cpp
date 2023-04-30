@@ -4,6 +4,7 @@
 #include <List.h>
 #include <Music.h>
 #include <Artist.h>
+#include <Playlist.h>
 
 using std::cin;
 using std::string;
@@ -19,7 +20,7 @@ void flush()
 int main()
 {
 
-    List<Music *> *test = new List<Music *>();
+    Playlist *playlist = new Playlist();
 
     int x;
 
@@ -36,14 +37,18 @@ int main()
         cout << "Music: ";
         getline(cin, nameMusic);
 
-        cout << endl;
+        Music *music = new Music(new Artist(nameArtist), nameMusic);
 
-        // test.add(new Music(new Artist(nameArtist), nameMusic));
-
-        test->add(new Music(new Artist(nameArtist), nameMusic));
+        playlist->addMusic(music);
     }
 
-    cout << test;
+    // system("clear");
+    char keep;
+    do
+    {
+        cout << playlist->nextMusic();
+        cin >> keep;
+    } while (keep == 's');
 
     return 0;
 }

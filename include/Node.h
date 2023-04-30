@@ -41,7 +41,7 @@ public:
     }
     friend ostream &operator<<(ostream &os, Node<T> *node)
     {
-        os << node->getData() << endl;
+        os << node->getData();
 
         if (node->getNext() != nullptr)
         {
