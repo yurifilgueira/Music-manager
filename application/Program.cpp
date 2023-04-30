@@ -59,5 +59,7 @@ int main()
         cin >> keep;
     } while (keep == 's');
 
+    playlist->printMusics();
+
     return 0;
 }

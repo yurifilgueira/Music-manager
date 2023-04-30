@@ -54,9 +54,7 @@ Music *Playlist::nextMusic()
     }
     else if (!noNext)
     {
-        cout << "Opa1" << endl;
         music = next;
-        cout << "Opa2" << endl;
         if (music->getNext() != nullptr)
         {
             next = music->getNext();
@@ -73,4 +71,9 @@ Music *Playlist::nextMusic()
     }
 
     return music->getData();
+}
+
+void Playlist::printMusics()
+{
+    cout << musics;
 }

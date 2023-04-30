@@ -18,6 +18,7 @@ public:
     List<Music *> *getPlaylist();
     void addMusic(Music *music);
     Music *nextMusic();
+    void printMusics();
 };
 
 #endif
