@@ -5,7 +5,9 @@ include_directories( include )
 
 
 add_executable( program
-                application/Program.cpp
-                entities/Artist.cpp 
-                entities/Music.cpp 
-                entities/Playlist.cpp)
+                src/application/Program.cpp
+                src/entities/Artist.cpp 
+                src/entities/Music.cpp 
+                src/entities/Playlist.cpp
+                src/entities/SystemMusics.cpp
+                src/entities/SystemPlaylists.cpp)

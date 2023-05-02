@@ -14,6 +14,7 @@ private:
 
 public:
     Artist();
+    ~Artist();
     Artist(string name);
     string getName();
     void setName(string name);

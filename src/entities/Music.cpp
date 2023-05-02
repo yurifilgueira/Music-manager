@@ -12,6 +12,10 @@ Music::Music()
     this->artist = nullptr;
 }
 
+Music::~Music()
+{
+}
+
 Music::Music(Artist *artist, string name)
 {
     this->artist = new Artist(*artist);

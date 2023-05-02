@@ -27,6 +27,10 @@ public:
         data = value;
         next = nullptr;
     }
+    ~Node()
+    {
+        delete next;
+    }
     T getData()
     {
         return this->data;

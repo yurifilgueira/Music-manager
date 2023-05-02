@@ -1,8 +1,16 @@
 #include <Artist.h>
 
+#include <iostream>
+
+using std::cout;
+
 using std::endl;
 
 Artist::Artist()
+{
+}
+
+Artist::~Artist()
 {
 }
 
