@@ -10,7 +10,7 @@ class Playlist
 {
 
 private:
-    string *name;
+    string name;
     Node<Music *> *currentNode;
     List<Music *> *musics = new List<Music *>();
 

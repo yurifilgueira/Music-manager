@@ -1,5 +1,5 @@
 #include <Music.h>
-#include <Artist.h>
+#include <string.h>
 #include <iostream>
 
 using std::cout;
@@ -9,16 +9,16 @@ using std::string;
 
 Music::Music()
 {
-    this->artist = nullptr;
+    this->nameArtist = string();
 }
 
 Music::~Music()
 {
 }
 
-Music::Music(Artist *artist, string name)
+Music::Music(string nameArtist, string name)
 {
-    this->artist = new Artist(*artist);
+    this->nameArtist = string(nameArtist);
     this->name = name;
 }
 
@@ -32,19 +32,20 @@ void Music::setName(string name)
     this->name = name;
 }
 
-Artist *Music::getArtist()
+string Music::getNameArtist()
 {
-    return this->artist;
+    return this->nameArtist;
 }
 
-void Music::setArtist(Artist *artist)
+void Music::setNameArtist(string nameArtist)
 {
-    this->artist = artist;
+    this->nameArtist = nameArtist;
 }
+
 ostream &operator<<(ostream &os, Music *music)
 {
     os << "Music: " << music->getName() << endl;
-    os << "Artist: " << music->getArtist() << endl;
+    os << "Artist/Band: " << music->getNameArtist() << endl;
 
     return os;
 }

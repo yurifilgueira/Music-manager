@@ -2,7 +2,6 @@
 #define MUSIC_H
 
 #include <iostream>
-#include <Artist.h>
 #include <ostream>
 
 using std::ostream;
@@ -12,17 +11,17 @@ class Music
 {
 
 private:
-    Artist *artist;
+    string nameArtist;
     string name;
 
 public:
     Music();
     ~Music();
-    Music(Artist *artist, string name);
+    Music(string nameArtist, string name);
     string getName();
     void setName(string name);
-    Artist *getArtist();
-    void setArtist(Artist *artist);
+    string getNameArtist();
+    void setNameArtist(string nameArtist);
     friend ostream &operator<<(ostream &os, Music *music);
 };
 

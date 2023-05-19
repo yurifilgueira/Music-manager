@@ -5,33 +5,33 @@ using std::cout;
 
 Playlist::Playlist()
 {
-    this->name = nullptr;
+    this->name = "NULL";
     this->currentNode = nullptr;
 }
 
 Playlist::~Playlist()
 {
+    delete musics;
 }
 
 Playlist::Playlist(string name)
 {
-    this->name = new string(name);
+    this->name = name;
 }
 
 string Playlist::getName()
 {
 
-    if (this->name == nullptr)
+    if (this->name == "NULL")
     {
         return "You didn't name this playlist";
     }
-    return *this->name;
+    return this->name;
 }
 
 void Playlist::setName(string name)
 {
-    delete this->name;
-    this->name = new string(name);
+    this->name = name;
 }
 
 List<Music *> *Playlist::getPlaylist()
@@ -98,7 +98,13 @@ Music *Playlist::searchByName(string name)
 }
 ostream &operator<<(ostream &os, Playlist *playlist)
 {
+    if (playlist == nullptr)
+    {
+        os << "A playlist está vazia.";
+    }
+    else {
     os << "Nome: " << playlist->getName() << endl;
+    }
 
     return os;
 }

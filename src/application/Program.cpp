@@ -3,7 +3,6 @@
 #include <ios>
 #include <List.h>
 #include <Music.h>
-#include <Artist.h>
 #include <Playlist.h>
 #include <SystemMusics.h>
 #include <SystemPlaylists.h>
@@ -24,6 +23,7 @@ int main()
 
     SystemPlaylists *sp = new SystemPlaylists();
     SystemMusics *sm = new SystemMusics();
+    Playlist *p = new Playlist();
     string name;
     string nameArtist;
 
@@ -67,8 +67,6 @@ int main()
             int choice2 = 0;
             cout << "Digite a playlist que será acessada: ";
             getline(cin, name);
-
-            Playlist *p = new Playlist();
             if (sp->searchPlaylist(name) != nullptr)
             {
                 p = sp->searchPlaylist(name);
@@ -76,7 +74,7 @@ int main()
             else
             {
                 cout << "Playlist não encontrada ou vazia." << endl;
-                cout << "Pressione 6 para voltar a tela inicial." << endl;
+                cout << "Pressione 0 para voltar a tela inicial." << endl;
                 cin >> choice;
                 break;
             }
@@ -109,7 +107,7 @@ int main()
                     cout << "\nDigite o nome do artista/banda: ";
                     getline(cin, nameArtist);
 
-                    Music *m = new Music(new Artist(nameArtist), name);
+                    Music *m = new Music(nameArtist, name);
 
                     sm->addMusicToSystem(m);
                     p->addMusic(m);
@@ -222,7 +220,7 @@ int main()
             cout << "\nDigite o nome do artista/banda: ";
             getline(cin, nameArtist);
 
-            Music *m = new Music(new Artist(nameArtist), name);
+            Music *m = new Music(nameArtist, name);
 
             sm->addMusicToSystem(m);
             int x;
@@ -256,6 +254,10 @@ int main()
         break;
         }
     }
+
+    delete p;
+    delete sm;
+    delete sp;
 
     return 0;
 }
