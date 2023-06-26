@@ -6,6 +6,12 @@ SystemPlaylists::SystemPlaylists()
 
 SystemPlaylists::~SystemPlaylists()
 {
+    delete playlists;
+}
+
+List<Playlist *> *SystemPlaylists::getPlaylists()
+{
+    return playlists;
 }
 
 void SystemPlaylists::addPlaylistToSystem(Playlist *playlist)

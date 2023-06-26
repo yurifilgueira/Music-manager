@@ -1,0 +1,301 @@
+\hypertarget{classList}{}\doxysection{Referência do $<$em$>$Template$<$/em$>$ da Classe List$<$ T $>$}
+\label{classList}\index{List$<$ T $>$@{List$<$ T $>$}}
+
+
+Classe que representa uma lista encadeada.  
+
+
+
+
+{\ttfamily \#include $<$List.\+h$>$}
+
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classList_a5c5e27671b21b3815d4e25b953c69454}\label{classList_a5c5e27671b21b3815d4e25b953c69454}} 
+\mbox{\hyperlink{classList_a5c5e27671b21b3815d4e25b953c69454}{List}} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão da classe \mbox{\hyperlink{classList}{List}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classList_aa645e5d6f601a139875023054cca6073}{List}} (\mbox{\hyperlink{classList}{List}}$<$ T $>$ \&obj)
+\begin{DoxyCompactList}\small\item\em Construtor de cópia da classe \mbox{\hyperlink{classList}{List}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNode}{Node}}$<$ T $>$ $\ast$ \mbox{\hyperlink{classList_a786c0ed42a576a1c56b20ab892f51d27}{get\+Head}} ()
+\begin{DoxyCompactList}\small\item\em Obtém o ponteiro para o primeiro nó da lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNode}{Node}}$<$ T $>$ $\ast$ \mbox{\hyperlink{classList_aeadc86b707f794159f58a63aadd43947}{get\+Tail}} ()
+\begin{DoxyCompactList}\small\item\em Obtém o ponteiro para o último nó da lista. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classList_ae2afa15a07b88a3a678969522cc14988}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Obtém o tamanho da lista. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classList_a2b58189090f6e5ce52939c9195e59e85}\label{classList_a2b58189090f6e5ce52939c9195e59e85}} 
+\mbox{\hyperlink{classList_a2b58189090f6e5ce52939c9195e59e85}{$\sim$\+List}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{classList}{List}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classList_a2938d1339a9a259472e3ff443857172b}{add}} (T value)
+\begin{DoxyCompactList}\small\item\em Adiciona um elemento à lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classList_a2d50369225ae88e8e0fbeabca85e0948}{remove}} (T data)
+\begin{DoxyCompactList}\small\item\em Remove um elemento da lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classList_a9deff359d34933d65693d8c70ee2a9f7}{add\+Linked}} (\mbox{\hyperlink{classList}{List}}$<$ T $>$ \&linkedlist)
+\begin{DoxyCompactList}\small\item\em Adiciona os elementos de outra lista à lista atual. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classList_a817ae588f750270d8e9bd2684922a1b2}{remove\+Linked}} (\mbox{\hyperlink{classList}{List}}$<$ T $>$ \&linkedlist)
+\begin{DoxyCompactList}\small\item\em Remove os elementos de outra lista da lista atual. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classList}{List}}$<$ T $>$ $\ast$ \mbox{\hyperlink{classList_a04a4ca1ed68d7f6565c850cb9a07fe0e}{operator+}} (\mbox{\hyperlink{classList}{List}}$<$ T $>$ \&linked\+List)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador de soma para mesclar duas listas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classList_ad4d7568857f9feb5755f4bda53459e82}{operator$>$$>$}} (\mbox{\hyperlink{classNode}{Node}}$<$ T $>$ \&no)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador de extração para remover o último elemento da lista e armazená-\/lo em um nó. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classList_a275cad632d9e50944b0f9725a565b3a0}{operator$<$$<$}} (\mbox{\hyperlink{classNode}{Node}}$<$ T $>$ \&no)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador de inserção para adicionar o conteúdo de um nó à lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNode}{Node}}$<$ T $>$ $\ast$ \mbox{\hyperlink{classList_ae1a61bf8478bde5c20ff70e7c483e28b}{head}}
+\item 
+\mbox{\hyperlink{classNode}{Node}}$<$ T $>$ $\ast$ \mbox{\hyperlink{classList_ae9ac5836a3c8b4b4953030082b014425}{tail}}
+\item 
+int \mbox{\hyperlink{classList_a9bcdc47851f17550669b03ef3fd3f6b9}{size}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{classList_a56aa034b9853061d025e8e75f349a892}{operator$<$$<$}} (ostream \&os, \mbox{\hyperlink{classList}{List}} $\ast$list)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador de inserção em stream para imprimir a lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+\subsubsection*{template$<$typename T$>$\newline
+class List$<$ T $>$}
+
+Classe que representa uma lista encadeada. 
+
+
+\begin{DoxyTemplParams}{Parâmetros do $<$em$>$template$<$/em$>$}
+{\em T} & O tipo de dado armazenado na lista. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{classList_aa645e5d6f601a139875023054cca6073}\label{classList_aa645e5d6f601a139875023054cca6073}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!List@{List}}
+\index{List@{List}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{List()}{List()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classList}{List}}$<$ T $>$\+::\mbox{\hyperlink{classList}{List}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classList}{List}}$<$ T $>$ \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construtor de cópia da classe \mbox{\hyperlink{classList}{List}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em obj} & Lista a ser copiada. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classList_a2938d1339a9a259472e3ff443857172b}\label{classList_a2938d1339a9a259472e3ff443857172b}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!add@{add}}
+\index{add@{add}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::add (\begin{DoxyParamCaption}\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adiciona um elemento à lista. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em value} & O valor a ser adicionado à lista. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classList_a9deff359d34933d65693d8c70ee2a9f7}\label{classList_a9deff359d34933d65693d8c70ee2a9f7}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!addLinked@{addLinked}}
+\index{addLinked@{addLinked}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{addLinked()}{addLinked()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::add\+Linked (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classList}{List}}$<$ T $>$ \&}]{linkedlist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adiciona os elementos de outra lista à lista atual. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em linkedlist} & A lista a ser adicionada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classList_a786c0ed42a576a1c56b20ab892f51d27}\label{classList_a786c0ed42a576a1c56b20ab892f51d27}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!getHead@{getHead}}
+\index{getHead@{getHead}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getHead()}{getHead()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNode}{Node}}$<$T$>$$\ast$ \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::get\+Head (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém o ponteiro para o primeiro nó da lista. 
+
+\begin{DoxyReturn}{Retorna}
+O ponteiro para o primeiro nó da lista. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classList_ae2afa15a07b88a3a678969522cc14988}\label{classList_ae2afa15a07b88a3a678969522cc14988}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!getSize@{getSize}}
+\index{getSize@{getSize}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém o tamanho da lista. 
+
+\begin{DoxyReturn}{Retorna}
+O tamanho da lista. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classList_aeadc86b707f794159f58a63aadd43947}\label{classList_aeadc86b707f794159f58a63aadd43947}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!getTail@{getTail}}
+\index{getTail@{getTail}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getTail()}{getTail()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNode}{Node}}$<$T$>$$\ast$ \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::get\+Tail (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém o ponteiro para o último nó da lista. 
+
+\begin{DoxyReturn}{Retorna}
+O ponteiro para o último nó da lista. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classList_a04a4ca1ed68d7f6565c850cb9a07fe0e}\label{classList_a04a4ca1ed68d7f6565c850cb9a07fe0e}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classList}{List}}$<$T$>$$\ast$ \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classList}{List}}$<$ T $>$ \&}]{linked\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sobrecarga do operador de soma para mesclar duas listas. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em linked\+List} & A lista a ser mesclada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Um ponteiro para uma nova lista contendo os elementos mesclados. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classList_a275cad632d9e50944b0f9725a565b3a0}\label{classList_a275cad632d9e50944b0f9725a565b3a0}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNode}{Node}}$<$ T $>$ \&}]{no }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sobrecarga do operador de inserção para adicionar o conteúdo de um nó à lista. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em no} & O nó contendo o elemento a ser adicionado à lista. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classList_ad4d7568857f9feb5755f4bda53459e82}\label{classList_ad4d7568857f9feb5755f4bda53459e82}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNode}{Node}}$<$ T $>$ \&}]{no }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sobrecarga do operador de extração para remover o último elemento da lista e armazená-\/lo em um nó. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em no} & O nó que irá armazenar o último elemento da lista. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classList_a2d50369225ae88e8e0fbeabca85e0948}\label{classList_a2d50369225ae88e8e0fbeabca85e0948}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!remove@{remove}}
+\index{remove@{remove}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::remove (\begin{DoxyParamCaption}\item[{T}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove um elemento da lista. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em data} & O valor a ser removido da lista. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classList_a817ae588f750270d8e9bd2684922a1b2}\label{classList_a817ae588f750270d8e9bd2684922a1b2}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!removeLinked@{removeLinked}}
+\index{removeLinked@{removeLinked}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{removeLinked()}{removeLinked()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::remove\+Linked (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classList}{List}}$<$ T $>$ \&}]{linkedlist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove os elementos de outra lista da lista atual. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em linkedlist} & A lista a ser removida. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Amigas e Funções Relacionadas}
+\mbox{\Hypertarget{classList_a56aa034b9853061d025e8e75f349a892}\label{classList_a56aa034b9853061d025e8e75f349a892}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{\mbox{\hyperlink{classList}{List}}$<$ T $>$ $\ast$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga do operador de inserção em stream para imprimir a lista. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em os} & Stream de saída. \\
+\hline
+{\em list} & Ponteiro para a lista a ser impressa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+A stream de saída. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Atributos}
+\mbox{\Hypertarget{classList_ae1a61bf8478bde5c20ff70e7c483e28b}\label{classList_ae1a61bf8478bde5c20ff70e7c483e28b}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!head@{head}}
+\index{head@{head}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{head}{head}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNode}{Node}}$<$T$>$$\ast$ \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::head\hspace{0.3cm}{\ttfamily [private]}}
+
+Ponteiro para o primeiro nó da lista. \mbox{\Hypertarget{classList_a9bcdc47851f17550669b03ef3fd3f6b9}\label{classList_a9bcdc47851f17550669b03ef3fd3f6b9}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!size@{size}}
+\index{size@{size}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::size\hspace{0.3cm}{\ttfamily [private]}}
+
+Tamanho da lista. \mbox{\Hypertarget{classList_ae9ac5836a3c8b4b4953030082b014425}\label{classList_ae9ac5836a3c8b4b4953030082b014425}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!tail@{tail}}
+\index{tail@{tail}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{tail}{tail}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNode}{Node}}$<$T$>$$\ast$ \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::tail\hspace{0.3cm}{\ttfamily [private]}}
+
+Ponteiro para o último nó da lista. 
+
+A documentação para essa classe foi gerada a partir do seguinte arquivo\+:\begin{DoxyCompactItemize}
+\item 
+include/List.\+h\end{DoxyCompactItemize}

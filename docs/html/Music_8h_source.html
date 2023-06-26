@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Music-Manager: Código-Fonte de include/Music.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Music-Manager
+   &#160;<span id="projectnumber">2.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Music.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MUSIC_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MUSIC_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;ostream&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> std::ostream;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using</span> std::string;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classMusic.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMusic.html">Music</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classMusic.html#aae100eae850bd1db1cd36c4f664550b3">   18</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classMusic.html#aae100eae850bd1db1cd36c4f664550b3">nameArtist</a>; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classMusic.html#a1eadf12e0e2b4ccd5e9d1ef84a35967b">   19</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classMusic.html#a1eadf12e0e2b4ccd5e9d1ef84a35967b">name</a>; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classMusic.html#ab5143f67c021bc77894c8e91de2b916b">Music</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classMusic.html#a0b4f3b9a018207e0c08003505f1f87fe">~Music</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classMusic.html#ab5143f67c021bc77894c8e91de2b916b">Music</a>(<span class="keywordtype">string</span> <a class="code" href="classMusic.html#aae100eae850bd1db1cd36c4f664550b3">nameArtist</a>, <span class="keywordtype">string</span> <a class="code" href="classMusic.html#a1eadf12e0e2b4ccd5e9d1ef84a35967b">name</a>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classMusic.html#a45e0fb29274d351da8a572a47c45cdb6">getName</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMusic.html#a4fd5ce2458d765444bf2fbb11b2d2709">setName</a>(<span class="keywordtype">string</span> <a class="code" href="classMusic.html#a1eadf12e0e2b4ccd5e9d1ef84a35967b">name</a>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classMusic.html#adca20a17587eeb2ba99feac3919c5e15">getNameArtist</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMusic.html#a1d662f1df5fe855415f68199955fef1c">setNameArtist</a>(<span class="keywordtype">string</span> <a class="code" href="classMusic.html#aae100eae850bd1db1cd36c4f664550b3">nameArtist</a>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">friend</span> ostream &amp;<a class="code" href="classMusic.html#a8fdffa7f262d01db1abd9c8bcb36601d">operator&lt;&lt;</a>(ostream &amp;os, <a class="code" href="classMusic.html">Music</a> *music);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassMusic_html_a4fd5ce2458d765444bf2fbb11b2d2709"><div class="ttname"><a href="classMusic.html#a4fd5ce2458d765444bf2fbb11b2d2709">Music::setName</a></div><div class="ttdeci">void setName(string name)</div><div class="ttdoc">Define o nome da música.</div><div class="ttdef"><b>Definition:</b> Music.cpp:30</div></div>
+<div class="ttc" id="aclassMusic_html_ab5143f67c021bc77894c8e91de2b916b"><div class="ttname"><a href="classMusic.html#ab5143f67c021bc77894c8e91de2b916b">Music::Music</a></div><div class="ttdeci">Music()</div><div class="ttdoc">Construtor padrão da classe Music.</div><div class="ttdef"><b>Definition:</b> Music.cpp:10</div></div>
+<div class="ttc" id="aclassMusic_html"><div class="ttname"><a href="classMusic.html">Music</a></div><div class="ttdoc">Classe que representa uma música.</div><div class="ttdef"><b>Definition:</b> Music.h:14</div></div>
+<div class="ttc" id="aclassMusic_html_a45e0fb29274d351da8a572a47c45cdb6"><div class="ttname"><a href="classMusic.html#a45e0fb29274d351da8a572a47c45cdb6">Music::getName</a></div><div class="ttdeci">string getName()</div><div class="ttdoc">Obtém o nome da música.</div><div class="ttdef"><b>Definition:</b> Music.cpp:25</div></div>
+<div class="ttc" id="aclassMusic_html_aae100eae850bd1db1cd36c4f664550b3"><div class="ttname"><a href="classMusic.html#aae100eae850bd1db1cd36c4f664550b3">Music::nameArtist</a></div><div class="ttdeci">string nameArtist</div><div class="ttdef"><b>Definition:</b> Music.h:18</div></div>
+<div class="ttc" id="aclassMusic_html_a8fdffa7f262d01db1abd9c8bcb36601d"><div class="ttname"><a href="classMusic.html#a8fdffa7f262d01db1abd9c8bcb36601d">Music::operator&lt;&lt;</a></div><div class="ttdeci">friend ostream &amp; operator&lt;&lt;(ostream &amp;os, Music *music)</div><div class="ttdoc">Sobrecarga do operador de inserção em stream para imprimir a música.</div><div class="ttdef"><b>Definition:</b> Music.cpp:45</div></div>
+<div class="ttc" id="aclassMusic_html_a1eadf12e0e2b4ccd5e9d1ef84a35967b"><div class="ttname"><a href="classMusic.html#a1eadf12e0e2b4ccd5e9d1ef84a35967b">Music::name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> Music.h:19</div></div>
+<div class="ttc" id="aclassMusic_html_adca20a17587eeb2ba99feac3919c5e15"><div class="ttname"><a href="classMusic.html#adca20a17587eeb2ba99feac3919c5e15">Music::getNameArtist</a></div><div class="ttdeci">string getNameArtist()</div><div class="ttdoc">Obtém o nome do artista/banda da música.</div><div class="ttdef"><b>Definition:</b> Music.cpp:35</div></div>
+<div class="ttc" id="aclassMusic_html_a0b4f3b9a018207e0c08003505f1f87fe"><div class="ttname"><a href="classMusic.html#a0b4f3b9a018207e0c08003505f1f87fe">Music::~Music</a></div><div class="ttdeci">~Music()</div><div class="ttdoc">Destrutor da classe Music.</div><div class="ttdef"><b>Definition:</b> Music.cpp:15</div></div>
+<div class="ttc" id="aclassMusic_html_a1d662f1df5fe855415f68199955fef1c"><div class="ttname"><a href="classMusic.html#a1d662f1df5fe855415f68199955fef1c">Music::setNameArtist</a></div><div class="ttdeci">void setNameArtist(string nameArtist)</div><div class="ttdoc">Define o nome do artista/banda da música.</div><div class="ttdef"><b>Definition:</b> Music.cpp:40</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

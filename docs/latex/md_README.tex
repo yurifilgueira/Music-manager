@@ -1,0 +1,46 @@
+Este é um programa simples para gerenciar playlists de músicas. Ele permite criar playlists, adicionar músicas a elas, remover músicas, reproduzir as músicas da playlist e realizar outras operações relacionadas.\hypertarget{md_README_autotoc_md1}{}\doxysection{Identificação}\label{md_README_autotoc_md1}
+N\+O\+ME\+: Yuri Filgueira Tavares de Medeiros M\+A\+T\+RÍ\+C\+U\+LA\+: 20220034872 T\+U\+R\+MA\+: 02
+
+N\+O\+ME\+: I\+LO B\+E\+N\+E\+V\+I\+D\+ES DE M\+I\+R\+A\+N\+DA C\+A\+V\+A\+L\+C\+A\+N\+TI M\+A\+T\+RÍ\+C\+U\+LA\+: 20220065108 T\+U\+R\+MA\+: 01\hypertarget{md_README_autotoc_md2}{}\doxysection{Compilação e Execução}\label{md_README_autotoc_md2}
+Certifique-\/se de ter o g++ e o C\+Make instalados em seu sistema antes de prosseguir.
+
+
+\begin{DoxyEnumerate}
+\item No terminal, execute o comando {\ttfamily cmake .} para gerar os arquivos de configuração do C\+Make.
+\item Em seguida, execute o comando {\ttfamily make} para compilar o programa.
+\item Após a compilação bem-\/sucedida, execute o programa digitando {\ttfamily ./program}.
+\end{DoxyEnumerate}\hypertarget{md_README_autotoc_md3}{}\doxysection{Guia de Uso}\label{md_README_autotoc_md3}
+O programa possui um menu principal com as seguintes opções\+:
+
+
+\begin{DoxyEnumerate}
+\item {\bfseries{Criar uma playlist}}\+: Permite criar uma nova playlist.
+\item {\bfseries{Criar uma playlist juntando duas outras}}\+: Cria uma nova playlist combinando duas playlists existentes.
+\item {\bfseries{Acessar uma playlist}}\+: Permite acessar uma playlist existente e realizar operações específicas nela.
+\item {\bfseries{Adicionar música ao sistema}}\+: Adiciona uma nova música ao sistema, fora de qualquer playlist.
+\item {\bfseries{Mostrar todas as músicas}}\+: Exibe todas as músicas presentes no sistema, incluindo as de diferentes playlists.
+\item {\bfseries{Listar playlists}}\+: Lista todas as playlists existentes.
+\item {\bfseries{Copiar uma playlist}}\+: Cria uma cópia de uma playlist existente.
+\item {\bfseries{Copiar uma playlist e adicionar uma música}}\+: Cria uma cópia de uma playlist existente e adiciona uma nova música à cópia.
+\item {\bfseries{Copiar uma playlist e remover uma música}}\+: Cria uma cópia de uma playlist existente e remove uma música da cópia. 0. {\bfseries{Fechar o aplicativo}}\+: Encerra a execução do programa.
+\end{DoxyEnumerate}
+
+Ao selecionar a opção 3 (Acessar uma playlist), você entrará no menu da playlist selecionada. Nesse menu, você terá as seguintes opções\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Adicionar música}}\+: Adiciona uma música à playlist.
+\item {\bfseries{Remover música}}\+: Remove uma música da playlist.
+\item {\bfseries{Mostrar músicas da playlist}}\+: Exibe todas as músicas da playlist.
+\item {\bfseries{Buscar música pelo nome}}\+: Busca uma música na playlist pelo nome.
+\item {\bfseries{Reprodutor}}\+: Reproduz as músicas da playlist.
+\item {\bfseries{Adicionar as músicas de outra playlist a esta playlist}}\+: Copia as músicas de outra playlist para a playlist atual.
+\item {\bfseries{Remover as músicas de outra playlist, desta playlist}}\+: Remove as músicas de outra playlist da playlist atual.
+\item {\bfseries{Remover a última música da playlist}}\+: Remove a última música adicionada à playlist.
+\item {\bfseries{Voltar à tela inicial}}\+: Retorna ao menu principal.
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md4}{}\doxysection{Limitações}\label{md_README_autotoc_md4}
+
+\begin{DoxyItemize}
+\item O programa não suporta a exclusão de uma música de todas as playlists ao mesmo tempo.
+\item Não é possível mover músicas entre playlists ou reorganizar a ordem das músicas dentro de uma playlist. 
+\end{DoxyItemize}

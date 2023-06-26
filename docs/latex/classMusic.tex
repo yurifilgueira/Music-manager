@@ -1,0 +1,177 @@
+\hypertarget{classMusic}{}\doxysection{Referência da Classe Music}
+\label{classMusic}\index{Music@{Music}}
+
+
+Classe que representa uma música.  
+
+
+
+
+{\ttfamily \#include $<$Music.\+h$>$}
+
+
+
+Diagrama de colaboração para Music\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{classMusic__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMusic_ab5143f67c021bc77894c8e91de2b916b}\label{classMusic_ab5143f67c021bc77894c8e91de2b916b}} 
+\mbox{\hyperlink{classMusic_ab5143f67c021bc77894c8e91de2b916b}{Music}} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão da classe \mbox{\hyperlink{classMusic}{Music}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMusic_a0b4f3b9a018207e0c08003505f1f87fe}\label{classMusic_a0b4f3b9a018207e0c08003505f1f87fe}} 
+\mbox{\hyperlink{classMusic_a0b4f3b9a018207e0c08003505f1f87fe}{$\sim$\+Music}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{classMusic}{Music}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMusic_a323936b39d3e78bc5b4fce78c87dcad1}{Music}} (string \mbox{\hyperlink{classMusic_aae100eae850bd1db1cd36c4f664550b3}{name\+Artist}}, string \mbox{\hyperlink{classMusic_a1eadf12e0e2b4ccd5e9d1ef84a35967b}{name}})
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classMusic}{Music}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classMusic_a45e0fb29274d351da8a572a47c45cdb6}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Obtém o nome da música. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMusic_a4fd5ce2458d765444bf2fbb11b2d2709}{set\+Name}} (string \mbox{\hyperlink{classMusic_a1eadf12e0e2b4ccd5e9d1ef84a35967b}{name}})
+\begin{DoxyCompactList}\small\item\em Define o nome da música. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classMusic_adca20a17587eeb2ba99feac3919c5e15}{get\+Name\+Artist}} ()
+\begin{DoxyCompactList}\small\item\em Obtém o nome do artista/banda da música. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMusic_a1d662f1df5fe855415f68199955fef1c}{set\+Name\+Artist}} (string \mbox{\hyperlink{classMusic_aae100eae850bd1db1cd36c4f664550b3}{name\+Artist}})
+\begin{DoxyCompactList}\small\item\em Define o nome do artista/banda da música. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classMusic_aae100eae850bd1db1cd36c4f664550b3}{name\+Artist}}
+\item 
+string \mbox{\hyperlink{classMusic_a1eadf12e0e2b4ccd5e9d1ef84a35967b}{name}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{classMusic_a8fdffa7f262d01db1abd9c8bcb36601d}{operator$<$$<$}} (ostream \&os, \mbox{\hyperlink{classMusic}{Music}} $\ast$music)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador de inserção em stream para imprimir a música. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe que representa uma música. 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{classMusic_a323936b39d3e78bc5b4fce78c87dcad1}\label{classMusic_a323936b39d3e78bc5b4fce78c87dcad1}} 
+\index{Music@{Music}!Music@{Music}}
+\index{Music@{Music}!Music@{Music}}
+\doxysubsubsection{\texorpdfstring{Music()}{Music()}}
+{\footnotesize\ttfamily Music\+::\+Music (\begin{DoxyParamCaption}\item[{string}]{name\+Artist,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classMusic}{Music}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em name\+Artist} & Nome do artista/banda da música. \\
+\hline
+{\em name} & Nome da música. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classMusic_a45e0fb29274d351da8a572a47c45cdb6}\label{classMusic_a45e0fb29274d351da8a572a47c45cdb6}} 
+\index{Music@{Music}!getName@{getName}}
+\index{getName@{getName}!Music@{Music}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Music\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtém o nome da música. 
+
+\begin{DoxyReturn}{Retorna}
+O nome da música. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMusic_adca20a17587eeb2ba99feac3919c5e15}\label{classMusic_adca20a17587eeb2ba99feac3919c5e15}} 
+\index{Music@{Music}!getNameArtist@{getNameArtist}}
+\index{getNameArtist@{getNameArtist}!Music@{Music}}
+\doxysubsubsection{\texorpdfstring{getNameArtist()}{getNameArtist()}}
+{\footnotesize\ttfamily string Music\+::get\+Name\+Artist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtém o nome do artista/banda da música. 
+
+\begin{DoxyReturn}{Retorna}
+O nome do artista/banda da música. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMusic_a4fd5ce2458d765444bf2fbb11b2d2709}\label{classMusic_a4fd5ce2458d765444bf2fbb11b2d2709}} 
+\index{Music@{Music}!setName@{setName}}
+\index{setName@{setName}!Music@{Music}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Music\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Define o nome da música. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em name} & O nome da música. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMusic_a1d662f1df5fe855415f68199955fef1c}\label{classMusic_a1d662f1df5fe855415f68199955fef1c}} 
+\index{Music@{Music}!setNameArtist@{setNameArtist}}
+\index{setNameArtist@{setNameArtist}!Music@{Music}}
+\doxysubsubsection{\texorpdfstring{setNameArtist()}{setNameArtist()}}
+{\footnotesize\ttfamily void Music\+::set\+Name\+Artist (\begin{DoxyParamCaption}\item[{string}]{name\+Artist }\end{DoxyParamCaption})}
+
+
+
+Define o nome do artista/banda da música. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em name\+Artist} & O nome do artista/banda da música. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Amigas e Funções Relacionadas}
+\mbox{\Hypertarget{classMusic_a8fdffa7f262d01db1abd9c8bcb36601d}\label{classMusic_a8fdffa7f262d01db1abd9c8bcb36601d}} 
+\index{Music@{Music}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Music@{Music}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{\mbox{\hyperlink{classMusic}{Music}} $\ast$}]{music }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga do operador de inserção em stream para imprimir a música. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em os} & Stream de saída. \\
+\hline
+{\em music} & Ponteiro para a música a ser impressa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+A stream de saída. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Atributos}
+\mbox{\Hypertarget{classMusic_a1eadf12e0e2b4ccd5e9d1ef84a35967b}\label{classMusic_a1eadf12e0e2b4ccd5e9d1ef84a35967b}} 
+\index{Music@{Music}!name@{name}}
+\index{name@{name}!Music@{Music}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string Music\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+Nome da música. \mbox{\Hypertarget{classMusic_aae100eae850bd1db1cd36c4f664550b3}\label{classMusic_aae100eae850bd1db1cd36c4f664550b3}} 
+\index{Music@{Music}!nameArtist@{nameArtist}}
+\index{nameArtist@{nameArtist}!Music@{Music}}
+\doxysubsubsection{\texorpdfstring{nameArtist}{nameArtist}}
+{\footnotesize\ttfamily string Music\+::name\+Artist\hspace{0.3cm}{\ttfamily [private]}}
+
+Nome do artista/banda da música. 
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/Music.\+h\item 
+src/entities/Music.\+cpp\end{DoxyCompactItemize}

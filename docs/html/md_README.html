@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Music-Manager: Music Playlist Manager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Music-Manager
+   &#160;<span id="projectnumber">2.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title"><a class="el" href="classMusic.html" title="Classe que representa uma música.">Music</a> <a class="el" href="classPlaylist.html" title="Classe que representa uma playlist.">Playlist</a> Manager </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Este é um programa simples para gerenciar playlists de músicas. Ele permite criar playlists, adicionar músicas a elas, remover músicas, reproduzir as músicas da playlist e realizar outras operações relacionadas.</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Identificação</h1>
+<p>NOME: Yuri Filgueira Tavares de Medeiros MATRÍCULA: 20220034872 TURMA: 02</p>
+<p>NOME: ILO BENEVIDES DE MIRANDA CAVALCANTI MATRÍCULA: 20220065108 TURMA: 01</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Compilação e Execução</h1>
+<p>Certifique-se de ter o g++ e o CMake instalados em seu sistema antes de prosseguir.</p>
+<ol type="1">
+<li>No terminal, execute o comando <code>cmake .</code> para gerar os arquivos de configuração do CMake.</li>
+<li>Em seguida, execute o comando <code>make</code> para compilar o programa.</li>
+<li>Após a compilação bem-sucedida, execute o programa digitando <code>./program</code>.</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Guia de Uso</h1>
+<p>O programa possui um menu principal com as seguintes opções:</p>
+<ol type="1">
+<li><b>Criar uma playlist</b>: Permite criar uma nova playlist.</li>
+<li><b>Criar uma playlist juntando duas outras</b>: Cria uma nova playlist combinando duas playlists existentes.</li>
+<li><b>Acessar uma playlist</b>: Permite acessar uma playlist existente e realizar operações específicas nela.</li>
+<li><b>Adicionar música ao sistema</b>: Adiciona uma nova música ao sistema, fora de qualquer playlist.</li>
+<li><b>Mostrar todas as músicas</b>: Exibe todas as músicas presentes no sistema, incluindo as de diferentes playlists.</li>
+<li><b>Listar playlists</b>: Lista todas as playlists existentes.</li>
+<li><b>Copiar uma playlist</b>: Cria uma cópia de uma playlist existente.</li>
+<li><b>Copiar uma playlist e adicionar uma música</b>: Cria uma cópia de uma playlist existente e adiciona uma nova música à cópia.</li>
+<li><b>Copiar uma playlist e remover uma música</b>: Cria uma cópia de uma playlist existente e remove uma música da cópia. 0. <b>Fechar o aplicativo</b>: Encerra a execução do programa.</li>
+</ol>
+<p>Ao selecionar a opção 3 (Acessar uma playlist), você entrará no menu da playlist selecionada. Nesse menu, você terá as seguintes opções:</p>
+<ul>
+<li><b>Adicionar música</b>: Adiciona uma música à playlist.</li>
+<li><b>Remover música</b>: Remove uma música da playlist.</li>
+<li><b>Mostrar músicas da playlist</b>: Exibe todas as músicas da playlist.</li>
+<li><b>Buscar música pelo nome</b>: Busca uma música na playlist pelo nome.</li>
+<li><b>Reprodutor</b>: Reproduz as músicas da playlist.</li>
+<li><b>Adicionar as músicas de outra playlist a esta playlist</b>: Copia as músicas de outra playlist para a playlist atual.</li>
+<li><b>Remover as músicas de outra playlist, desta playlist</b>: Remove as músicas de outra playlist da playlist atual.</li>
+<li><b>Remover a última música da playlist</b>: Remove a última música adicionada à playlist.</li>
+<li><b>Voltar à tela inicial</b>: Retorna ao menu principal.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Limitações</h1>
+<ul>
+<li>O programa não suporta a exclusão de uma música de todas as playlists ao mesmo tempo.</li>
+<li>Não é possível mover músicas entre playlists ou reorganizar a ordem das músicas dentro de uma playlist. </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

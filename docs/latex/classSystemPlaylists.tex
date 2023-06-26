@@ -1,0 +1,110 @@
+\hypertarget{classSystemPlaylists}{}\doxysection{Referência da Classe System\+Playlists}
+\label{classSystemPlaylists}\index{SystemPlaylists@{SystemPlaylists}}
+
+
+Classe que representa o sistema de playlists.  
+
+
+
+
+{\ttfamily \#include $<$System\+Playlists.\+h$>$}
+
+
+
+Diagrama de colaboração para System\+Playlists\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classSystemPlaylists__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSystemPlaylists_a417c7bf942229d93c3e136fb81e18ded}\label{classSystemPlaylists_a417c7bf942229d93c3e136fb81e18ded}} 
+\mbox{\hyperlink{classSystemPlaylists_a417c7bf942229d93c3e136fb81e18ded}{System\+Playlists}} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão da classe \mbox{\hyperlink{classSystemPlaylists}{System\+Playlists}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSystemPlaylists_a1b0ceb9773faaa0b1814f2853cd4e387}\label{classSystemPlaylists_a1b0ceb9773faaa0b1814f2853cd4e387}} 
+\mbox{\hyperlink{classSystemPlaylists_a1b0ceb9773faaa0b1814f2853cd4e387}{$\sim$\+System\+Playlists}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{classSystemPlaylists}{System\+Playlists}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classList}{List}}$<$ \mbox{\hyperlink{classPlaylist}{Playlist}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{classSystemPlaylists_a41806b744c0f139eb36b5a8028df0f61}{get\+Playlists}} ()
+\begin{DoxyCompactList}\small\item\em Obtém a lista de playlists do sistema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystemPlaylists_ab8c3a758667b400927d03e97955afffb}{add\+Playlist\+To\+System}} (\mbox{\hyperlink{classPlaylist}{Playlist}} $\ast$playlist)
+\begin{DoxyCompactList}\small\item\em Adiciona uma playlist ao sistema. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSystemPlaylists_a02741b04d393380cad74de4762f0a471}\label{classSystemPlaylists_a02741b04d393380cad74de4762f0a471}} 
+void \mbox{\hyperlink{classSystemPlaylists_a02741b04d393380cad74de4762f0a471}{print\+System\+Playlists}} ()
+\begin{DoxyCompactList}\small\item\em Imprime as playlists do sistema. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlaylist}{Playlist}} $\ast$ \mbox{\hyperlink{classSystemPlaylists_a5febf5884e06630c14fe4895606b0dfb}{search\+Playlist}} (string name)
+\begin{DoxyCompactList}\small\item\em Procura uma playlist pelo nome no sistema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classList}{List}}$<$ \mbox{\hyperlink{classPlaylist}{Playlist}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{classSystemPlaylists_a53ba2c1d575d293ec61bb3d0bfc78616}{playlists}} = new \mbox{\hyperlink{classList}{List}}$<$\mbox{\hyperlink{classPlaylist}{Playlist}} $\ast$$>$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe que representa o sistema de playlists. 
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classSystemPlaylists_ab8c3a758667b400927d03e97955afffb}\label{classSystemPlaylists_ab8c3a758667b400927d03e97955afffb}} 
+\index{SystemPlaylists@{SystemPlaylists}!addPlaylistToSystem@{addPlaylistToSystem}}
+\index{addPlaylistToSystem@{addPlaylistToSystem}!SystemPlaylists@{SystemPlaylists}}
+\doxysubsubsection{\texorpdfstring{addPlaylistToSystem()}{addPlaylistToSystem()}}
+{\footnotesize\ttfamily void System\+Playlists\+::add\+Playlist\+To\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlaylist}{Playlist}} $\ast$}]{playlist }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma playlist ao sistema. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em playlist} & Ponteiro para a playlist a ser adicionada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSystemPlaylists_a41806b744c0f139eb36b5a8028df0f61}\label{classSystemPlaylists_a41806b744c0f139eb36b5a8028df0f61}} 
+\index{SystemPlaylists@{SystemPlaylists}!getPlaylists@{getPlaylists}}
+\index{getPlaylists@{getPlaylists}!SystemPlaylists@{SystemPlaylists}}
+\doxysubsubsection{\texorpdfstring{getPlaylists()}{getPlaylists()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classList}{List}}$<$ \mbox{\hyperlink{classPlaylist}{Playlist}} $\ast$ $>$ $\ast$ System\+Playlists\+::get\+Playlists (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtém a lista de playlists do sistema. 
+
+\begin{DoxyReturn}{Retorna}
+Ponteiro para a lista de playlists. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSystemPlaylists_a5febf5884e06630c14fe4895606b0dfb}\label{classSystemPlaylists_a5febf5884e06630c14fe4895606b0dfb}} 
+\index{SystemPlaylists@{SystemPlaylists}!searchPlaylist@{searchPlaylist}}
+\index{searchPlaylist@{searchPlaylist}!SystemPlaylists@{SystemPlaylists}}
+\doxysubsubsection{\texorpdfstring{searchPlaylist()}{searchPlaylist()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlaylist}{Playlist}} $\ast$ System\+Playlists\+::search\+Playlist (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Procura uma playlist pelo nome no sistema. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em name} & Nome da playlist a ser procurada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Ponteiro para a playlist encontrada ou nullptr se não encontrada. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Atributos}
+\mbox{\Hypertarget{classSystemPlaylists_a53ba2c1d575d293ec61bb3d0bfc78616}\label{classSystemPlaylists_a53ba2c1d575d293ec61bb3d0bfc78616}} 
+\index{SystemPlaylists@{SystemPlaylists}!playlists@{playlists}}
+\index{playlists@{playlists}!SystemPlaylists@{SystemPlaylists}}
+\doxysubsubsection{\texorpdfstring{playlists}{playlists}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classList}{List}}$<$\mbox{\hyperlink{classPlaylist}{Playlist}} $\ast$$>$$\ast$ System\+Playlists\+::playlists = new \mbox{\hyperlink{classList}{List}}$<$\mbox{\hyperlink{classPlaylist}{Playlist}} $\ast$$>$\hspace{0.3cm}{\ttfamily [private]}}
+
+Lista de playlists do sistema. 
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/System\+Playlists.\+h\item 
+src/entities/System\+Playlists.\+cpp\end{DoxyCompactItemize}

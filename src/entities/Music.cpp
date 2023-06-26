@@ -18,7 +18,7 @@ Music::~Music()
 
 Music::Music(string nameArtist, string name)
 {
-    this->nameArtist = string(nameArtist);
+    this->nameArtist = nameArtist;
     this->name = name;
 }
 

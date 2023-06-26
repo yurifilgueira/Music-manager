@@ -1,0 +1,10 @@
+<map id="SystemPlaylists" name="SystemPlaylists">
+<area shape="rect" id="node1" title="Classe que representa o sistema de playlists." alt="" coords="15,675,141,701"/>
+<area shape="rect" id="node2" href="$classList.html" title=" " alt="" coords="11,585,145,612"/>
+<area shape="rect" id="node3" href="$classNode.html" title=" " alt="" coords="5,481,151,508"/>
+<area shape="rect" id="node4" href="$classPlaylist.html" title="Classe que representa uma playlist." alt="" coords="43,392,113,419"/>
+<area shape="rect" id="node5" href="$classNode.html" title=" " alt="" coords="83,199,217,225"/>
+<area shape="rect" id="node8" href="$classList.html" title=" " alt="" coords="188,303,312,329"/>
+<area shape="rect" id="node6" href="$classMusic.html" title="Classe que representa uma música." alt="" coords="87,109,147,136"/>
+<area shape="rect" id="node7" title=" " alt="" coords="9,5,67,32"/>
+</map>
